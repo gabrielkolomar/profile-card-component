@@ -1,0 +1,122 @@
+:root {
+  --dark-cyan: #19a2ae;
+  --very-dark-destured-blue: #2d3248;
+  --dark-grayish-blue: #001975;
+  --dark-gray: #969696;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+}
+
+body {
+  background: var(--dark-cyan);
+  font-family: 'Kumbh Sans', sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  overflow: hidden;
+}
+
+.pattern-img-top {
+  position: absolute;
+  left: -10%;
+  top: -40%;
+  z-index: -1;
+}
+
+.pattern-img-bottom {
+  position: absolute;
+  right: -10%;
+  bottom: -50%;
+  z-index: -1;
+}
+
+.card-content {
+  position: relative;
+  height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  background: var(--white);
+  border-radius: 15px;
+  width: 400px;
+  height: 400px;
+}
+
+.container .pattern-img img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+
+.profile-img img {
+  border-radius: 50px;
+  border: 5px solid var(--white);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -125px;
+}
+
+.container .private h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  color: var(--dark-grayish-blue);
+}
+
+.container .private span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 90px;
+  color: var(--very-dark-destured-blue);
+}
+
+.container .private strong {
+  color: var(--very-dark-destured-blue);
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+.container hr {
+  position: relative;
+  bottom: 65px;
+  margin: 6px 6px;
+}
+
+.container .information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-grayish-blue);
+  position: relative;
+  bottom: 50px;
+}
+
+.container .information h4 {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container .information span {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+  color: var(--very-dark-destured-blue);
+}
+
+.information-item:not(.information-item:first-child) {
+  margin-left: 50px;
+}
